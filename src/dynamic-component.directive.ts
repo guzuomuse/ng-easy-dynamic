@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { DynamicService } from './dynamic-service';
 @Directive({
-    selector: '[dynamicComponent]'
+    selector: 'dynamicComponent'
 })
 export class DynamicComponentDirective implements OnInit, OnChanges {
     // @Input() html: string;

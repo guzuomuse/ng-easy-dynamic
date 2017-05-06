@@ -47,7 +47,7 @@ Once your library is imported, you can use its  directives "dynamicComponent" wi
 <h1>
   {{title}}
 </h1>
-<ng-container dynamicModule [html]="your_custome_template" [context]="your_context" [imports]="your_extra_module_used_by_this_module"></ng-container>
+<dynamicModule [html]="your_custome_template" [context]="your_context" [imports]="your_extra_module_used_by_this_module"></dynamicModule>
 ```
 ## License
 

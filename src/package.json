@@ -1,9 +1,9 @@
 {
   "name": "ng-easy-dynamic",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/repo"
+    "url": "https://github.com/guzuomuse/ng-easy-dynamic.git"
   },
   "author": {
     "name": "guzuomuse",
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/username/repo/issues"
+    "url": "https://github.com/guzuomuse/ng-easy-dynamic.git/issues"
   },
   "module": "ng-easy-dynamic.js",
   "typings": "ng-easy-dynamic.d.ts",
