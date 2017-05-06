@@ -43,7 +43,7 @@ export class AppModule { }
 Once your library is imported, you can use its  directives `dynamicComponent` with `html`,`context`,`imports` attributes in your Angular application:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
+<!-- You can now use this library  in app.component.html -->
 <ng-container dynamicComponent [html]="your_custome_template" [context]="your_context" [imports]="your_extra_module_used_by_this_module"></ng-container>
 ```
 ## License
