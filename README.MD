@@ -10,13 +10,10 @@ $ npm install ng-easy-dynamic --save
 
 ## Consuming your library
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
+Once you have installed from npm , you can import this library in any Angular application for example:
 
-```bash
-$ npm install ng-easy-dynamic
-```
 
-and then from your Angular `AppModule`:
+in your Angular `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,7 +22,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'ng-easy-dynamic';
+import { EasyDynamicModule } from 'ng-easy-dynamic';
 
 @NgModule({
   declarations: [
@@ -35,7 +32,7 @@ import { SampleModule } from 'ng-easy-dynamic';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    EasyDynamicModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -43,30 +40,15 @@ import { SampleModule } from 'ng-easy-dynamic';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once your library is imported, you can use its  directives "dynamicComponent" with "html","context","imports" attributes in your Angular application:
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<ng-container dynamicModule [html]="your_custome_template" [context]="your_context" [imports]="your_extra_module_used_by_this_module"></ng-container>
 ```
-
-## Development
-
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run build
-```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
-
 ## License
 
 MIT © [guzuomuse](mailto:czh51success@163.com)
