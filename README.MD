@@ -40,7 +40,7 @@ import { EasyDynamicModule } from 'ng-easy-dynamic';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its  directives "dynamicComponent" with "html","context","imports" attributes in your Angular application:
+Once your library is imported, you can use its  directives `dynamicComponent` with `html`,`context`,`imports` attributes in your Angular application:
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
